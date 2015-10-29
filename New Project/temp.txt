@@ -1,0 +1,20 @@
+>test_status
+#cd check-0.9.9/checkmk/test.out/server;./server 1 &
+cd check-0.9.9/checkmk/test.out/client;./client;
+Running suite(s): The Suite
+
+
+
+[1;34m ui_get_auto_failover() [0m		[1;32m
+{"success":true,"message":"Information for Auto failover status.","timestamp":1445956265,"surl":"","data":{"auto_failover":"off"}}[0m
+
+[1;34m ui_get_cluster_id_database_id_shared_cache() [0m		[1;32m
+{"success":true,"message":"ERROR: Unable to find cluster shared cache in configuration.","timestamp":1445956265,"surl":"https://support.scalearc.com/kb/articles/1039","error_code":2123,"kb_id":"kb2123"}[0m
+
+
+[1;34m ui_get_cluster_id_database_id_shared_cache() [0m		[1;32m
+{"success":false,"message":"ERROR: Unable to find cluster shared cache in configuration.","timestamp":1445956265,"surl":"https://support.scalearc.com/kb/articles/1039","error_code":2123,"kb_id":"kb2123"}[0m
+
+100%: Checks: 2, Failures: 0, Errors: 0
+final_tests:5:P:The Test Case1:GET_AUTO_FAILOVER:0: Passed
+final_tests:14:P:The Test Case1:UI_GET_CLUSTER_ID_DATABASE_ID_SHARED_CACHE:0: Passed
